@@ -6,6 +6,8 @@
 }
 .tudo{
     max-width: 60vw;
+    align-content: center;
+    text-align: center;
 }
 .container-padrao{
     position: relative;
@@ -34,6 +36,7 @@
 }
 .tam-input{
     width: 5vw;
+    box-shadow: 5px 5px 4px #888888;
 }
 
 .preview-container{
@@ -67,4 +70,12 @@ img{
     max-width: 100%;
     max-height: 100%;
 
+}
+.btn{
+    margin-top: 1vw;
+    padding: 1vw;
+    background-color:#e8ded2 ;
+    border-radius: 10%;
+    border: solid  #056676;
+    box-shadow: 5px 5px 4px #888888;
 }

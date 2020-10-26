@@ -19,3 +19,29 @@ rt.addEventListener('change', v => {
 rb.addEventListener('change', v => {
     prev.style.borderBottomRightRadius = (v.target.value + "%" ) 
 });
+
+function copyToClipboard() {
+    var copyText = (lt.value + "% " + lb.value + "% " + rt.value + "% " + rb.value+"%");
+    console.log(copyText)
+    copyStringToClipboard(copyText);
+    //copyText.select();
+    //document.execCommand("copy");
+    //alert("Copied the text: " + copyText.value);
+  }
+
+  function copyStringToClipboard (str) {
+    // Create new element
+    var el = document.createElement('textarea');
+    // Set value (string to be copied)
+    el.value = str;
+    // Set non-editable to avoid focus and move outside of view
+    el.setAttribute('readonly', '');
+    el.style = {position: 'absolute', left: '-9999px'};
+    document.body.appendChild(el);
+    // Select text inside element
+    el.select();
+    // Copy text to clipboard
+    document.execCommand('copy');
+    // Remove temporary element
+    document.body.removeChild(el);
+ }
