@@ -40,8 +40,8 @@
     box-sizing: border-box;
     border: 4px solid;
     border-color:#e8ded2;
-    box-shadow: 5px 5px 4px #888888
-    
+    box-shadow: 5px 5px 4px #888888;
+    background-color: #e8ded2;
 }
 .div-titulo{
     padding: 10px;
